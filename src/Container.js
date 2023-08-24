@@ -6,7 +6,7 @@ import './Container.css';
 const Container = () => {
   return (
     <div className="container">
-      <header>
+      <header className="header">
         <p>Bootstrap and JS/jQuery Worksheet</p>
       </header>
       <main>
@@ -15,7 +15,7 @@ const Container = () => {
         </header>
 
         {/* Boxes */}
-        <section>
+        <section className="boxes">
           <Box />
           <Box />
           <Box />
@@ -23,28 +23,28 @@ const Container = () => {
 
         {/* Change Buttons */}
         <section>
-          <h4 className="page-header">Change Buttons</h4>
-          <section>
+          <h4 className="page-header change-btn">Change Buttons</h4>
+          <section className="buttons">
             <Button text="Change Box 1" />
             <Button text="Change Box 2" />
             <Button text="Change Box 3" />
-            <Button text="Change Box All" />
+            <Button text="Change All" />
           </section>
         </section>
 
         {/* Hide Buttons */}
         <section>
-          <h4 className="page-header">Hide Buttons</h4>
-          <section>
+          <h4 className="page-header hide-btn">Hide Buttons</h4>
+          <section className="buttons">
             <Button text="Hide Box 1" />
             <Button text="Hide Box 2" />
             <Button text="Hide Box 3" />
-            <Button text="Hide Box All" />
+            <Button text="Hide All" />
           </section>
         </section>
 
         {/* Final Buttons */}
-        <section>
+        <section className="buttons final-btns">
           <Button text="Reset Colors" />
           <Button text="Show All" />
         </section>
